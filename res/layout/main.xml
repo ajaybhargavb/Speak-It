@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/speak" android:padding="5dp" android:textSize="50dp" android:gravity="center" android:background="@drawable/blue_btn" style="@style/ButtonText" android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/entertext" android:textSize="20dp" android:layout_marginTop="20dp" android:padding="5dp" android:textColor="#449def"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/speakstr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:selectAllOnFocus="true"/>
+
+    <Button
+        android:id="@+id/speakbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/btnname"
+        android:textSize="20dp" android:layout_gravity="center" android:background="@drawable/blue_btn" style="@style/ButtonText"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/langsel" android:textSize="20dp" android:layout_marginTop="20dp" android:textColor="#449def"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/lang1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/langeng" android:onClick="onRadioButtonClicked" android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/lang2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/langfr" android:layout_marginLeft="10dp" android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
+</LinearLayout>
